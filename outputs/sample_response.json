@@ -1,0 +1,379 @@
+{
+  "video_name": "input_52b389257d8143428c35078b65a95b7a.mp4",
+  "fps_sampled": 5,
+  "counts_over_time": [
+    {
+      "timestamp_sec": 0,
+      "count": 1
+    },
+    {
+      "timestamp_sec": 0,
+      "count": 1
+    },
+    {
+      "timestamp_sec": 0,
+      "count": 1
+    },
+    {
+      "timestamp_sec": 0,
+      "count": 1
+    },
+    {
+      "timestamp_sec": 0,
+      "count": 1
+    },
+    {
+      "timestamp_sec": 1,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 1,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 1,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 1,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 1,
+      "count": 1
+    },
+    {
+      "timestamp_sec": 2,
+      "count": 1
+    },
+    {
+      "timestamp_sec": 2,
+      "count": 1
+    },
+    {
+      "timestamp_sec": 2,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 2,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 2,
+      "count": 2
+    },
+    {
+      "timestamp_sec": 3,
+      "count": 2
+    },
+    {
+      "timestamp_sec": 3,
+      "count": 1
+    },
+    {
+      "timestamp_sec": 3,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 3,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 3,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 4,
+      "count": 2
+    },
+    {
+      "timestamp_sec": 4,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 4,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 4,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 4,
+      "count": 6
+    },
+    {
+      "timestamp_sec": 5,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 5,
+      "count": 2
+    },
+    {
+      "timestamp_sec": 5,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 5,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 5,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 6,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 6,
+      "count": 6
+    },
+    {
+      "timestamp_sec": 6,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 6,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 6,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 7,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 7,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 7,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 7,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 7,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 8,
+      "count": 0
+    },
+    {
+      "timestamp_sec": 8,
+      "count": 0
+    },
+    {
+      "timestamp_sec": 8,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 8,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 8,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 9,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 9,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 9,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 9,
+      "count": 2
+    },
+    {
+      "timestamp_sec": 9,
+      "count": 2
+    },
+    {
+      "timestamp_sec": 10,
+      "count": 2
+    },
+    {
+      "timestamp_sec": 10,
+      "count": 2
+    },
+    {
+      "timestamp_sec": 10,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 10,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 10,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 11,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 11,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 11,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 11,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 11,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 12,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 12,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 12,
+      "count": 6
+    },
+    {
+      "timestamp_sec": 12,
+      "count": 6
+    },
+    {
+      "timestamp_sec": 12,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 13,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 13,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 13,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 13,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 13,
+      "count": 2
+    },
+    {
+      "timestamp_sec": 14,
+      "count": 2
+    },
+    {
+      "timestamp_sec": 14,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 14,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 14,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 14,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 15,
+      "count": 1
+    },
+    {
+      "timestamp_sec": 15,
+      "count": 1
+    },
+    {
+      "timestamp_sec": 15,
+      "count": 2
+    },
+    {
+      "timestamp_sec": 15,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 15,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 16,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 16,
+      "count": 3
+    }
+  ],
+  "tracks_sample": [
+    {
+      "track_id": 28,
+      "bbox": [
+        116.11865234375,
+        870.6815185546875,
+        458.58148193359375,
+        1134.1173095703125
+      ],
+      "confidence": 0.8034091591835022
+    },
+    {
+      "track_id": 40,
+      "bbox": [
+        283.55242919921875,
+        517.8079833984375,
+        487.25067138671875,
+        749.2113037109375
+      ],
+      "confidence": 0.6084358096122742
+    },
+    {
+      "track_id": 41,
+      "bbox": [
+        54.15875244140625,
+        755.6022338867188,
+        369.99609375,
+        949.8275756835938
+      ],
+      "confidence": 0.2986468970775604
+    }
+  ],
+  "weight_estimates": {
+    "unit": "index",
+    "per_bird_avg": {
+      "28": 0.08707601786350097,
+      "40": 0.04855773187435019,
+      "41": 0.06573075761214434
+    },
+    "flock_avg": 0.0671215024499985,
+    "assumptions": "Bounding box area used as weight proxy; camera calibration required to convert to grams."
+  },
+  "artifacts": {
+    "annotated_video": "outputs/annotated_video.mp4"
+  }
+}

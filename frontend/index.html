@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PoultryVision-AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --border: #1f2937;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --primary: #3b82f6;
+      --success: #22c55e;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: radial-gradient(circle at top, #111827, #020617);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1000px;
+      padding: 40px 20px 80px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: var(--muted);
+      max-width: 720px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #0b1220, #020617);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 30px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+
+    .upload-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    input[type="file"] {
+      color: var(--text);
+      background: #020617;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px;
+    }
+
+    button {
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      border: none;
+      border-radius: 10px;
+      padding: 10px 22px;
+      color: white;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 8px 20px rgba(59,130,246,0.4);
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 12px 28px rgba(59,130,246,0.6);
+    }
+
+    .status {
+      margin-top: 14px;
+      text-align: center;
+      font-weight: 600;
+      color: var(--success);
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      font-size: 1.4rem;
+      border-left: 4px solid var(--primary);
+      padding-left: 12px;
+    }
+
+    video {
+      width: 100%;
+      max-height: 520px;
+      background: black;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      margin-top: 10px;
+    }
+
+    .json-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 10px;
+    }
+
+    pre {
+      background: #020617;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      color: #c7d2fe;
+      max-height: 340px;
+      overflow: auto;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>🐔 PoultryVision-AI</h1>
+    <p class="subtitle">
+      Upload a poultry CCTV video to detect, track, count birds and estimate
+      relative weight using an AI-powered computer vision pipeline.
+    </p>
+
+    <!-- Upload -->
+    <div class="card">
+      <div class="upload-row">
+        <input type="file" id="videoInput" accept="video/*" />
+        <button onclick="analyzeVideo()">Analyze Video</button>
+      </div>
+      <div id="status" class="status"></div>
+    </div>
+
+    <!-- Video -->
+    <div class="card">
+      <h2>Annotated Output Video</h2>
+      <video id="outputVideo" controls></video>
+    </div>
+
+    <!-- JSON -->
+    <div class="card">
+      <h2>Analysis Result (JSON)</h2>
+
+      <div class="json-actions">
+        <button id="downloadBtn" onclick="downloadJSON()" style="display:none;">
+          ⬇ Download JSON
+        </button>
+      </div>
+
+      <pre id="jsonOutput"></pre>
+    </div>
+
+    <footer>
+      PoultryVision-AI · Computer Vision Prototype
+    </footer>
+
+  </div>
+
+  <script>
+    let latestResult = null;
+
+    async function analyzeVideo() {
+      const fileInput = document.getElementById("videoInput");
+      const status = document.getElementById("status");
+      const videoEl = document.getElementById("outputVideo");
+      const jsonEl = document.getElementById("jsonOutput");
+      const downloadBtn = document.getElementById("downloadBtn");
+
+      if (!fileInput.files.length) {
+        alert("Please select a video file.");
+        return;
+      }
+
+      const formData = new FormData();
+      formData.append("file", fileInput.files[0]);
+
+      status.innerText = "⏳ Processing video…";
+      videoEl.pause();
+      videoEl.removeAttribute("src");
+      videoEl.load();
+      jsonEl.innerText = "";
+      downloadBtn.style.display = "none";
+
+      try {
+        const response = await fetch("/analyze_video", {
+          method: "POST",
+          body: formData
+        });
+
+        if (!response.ok) {
+          throw new Error("API request failed");
+        }
+
+        const data = await response.json();
+        latestResult = data;
+
+        status.innerText = "✅ Processing complete";
+        jsonEl.innerText = JSON.stringify(data, null, 2);
+        downloadBtn.style.display = "inline-block";
+
+        let videoPath = data.artifacts.annotated_video.replace(/\\/g, "/");
+        videoEl.src = "/" + videoPath + "?t=" + Date.now();
+        videoEl.load();
+        videoEl.play();
+
+      } catch (err) {
+        console.error(err);
+        status.innerText = "❌ Error occurred while processing the video.";
+      }
+    }
+
+    function downloadJSON() {
+      if (!latestResult) return;
+
+      const blob = new Blob(
+        [JSON.stringify(latestResult, null, 2)],
+        { type: "application/json" }
+      );
+
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "analysis_result.json";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>
