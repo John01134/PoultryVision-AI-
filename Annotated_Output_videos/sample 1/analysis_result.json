@@ -1,0 +1,271 @@
+{
+  "video_name": "input_c396000268ef4eada9972284944775c3.mp4",
+  "fps_sampled": 5,
+  "counts_over_time": [
+    {
+      "timestamp_sec": 0,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 0,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 0,
+      "count": 2
+    },
+    {
+      "timestamp_sec": 0,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 0,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 1,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 1,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 1,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 1,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 1,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 2,
+      "count": 2
+    },
+    {
+      "timestamp_sec": 2,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 2,
+      "count": 2
+    },
+    {
+      "timestamp_sec": 2,
+      "count": 2
+    },
+    {
+      "timestamp_sec": 2,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 3,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 3,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 3,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 3,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 3,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 4,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 4,
+      "count": 6
+    },
+    {
+      "timestamp_sec": 4,
+      "count": 6
+    },
+    {
+      "timestamp_sec": 4,
+      "count": 9
+    },
+    {
+      "timestamp_sec": 4,
+      "count": 6
+    },
+    {
+      "timestamp_sec": 5,
+      "count": 8
+    },
+    {
+      "timestamp_sec": 5,
+      "count": 8
+    },
+    {
+      "timestamp_sec": 5,
+      "count": 6
+    },
+    {
+      "timestamp_sec": 5,
+      "count": 8
+    },
+    {
+      "timestamp_sec": 5,
+      "count": 8
+    },
+    {
+      "timestamp_sec": 6,
+      "count": 10
+    },
+    {
+      "timestamp_sec": 6,
+      "count": 10
+    },
+    {
+      "timestamp_sec": 6,
+      "count": 10
+    },
+    {
+      "timestamp_sec": 6,
+      "count": 7
+    },
+    {
+      "timestamp_sec": 6,
+      "count": 7
+    },
+    {
+      "timestamp_sec": 7,
+      "count": 7
+    },
+    {
+      "timestamp_sec": 7,
+      "count": 7
+    },
+    {
+      "timestamp_sec": 7,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 7,
+      "count": 8
+    },
+    {
+      "timestamp_sec": 7,
+      "count": 7
+    },
+    {
+      "timestamp_sec": 8,
+      "count": 6
+    },
+    {
+      "timestamp_sec": 8,
+      "count": 7
+    },
+    {
+      "timestamp_sec": 8,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 8,
+      "count": 7
+    }
+  ],
+  "tracks_sample": [
+    {
+      "track_id": 15,
+      "bbox": [
+        282.1226806640625,
+        413.7272644042969,
+        647.9696044921875,
+        754.3850708007812
+      ],
+      "confidence": 0.32076767086982727
+    },
+    {
+      "track_id": 21,
+      "bbox": [
+        767.5808715820312,
+        757.3531494140625,
+        945.8966674804688,
+        1043.373046875
+      ],
+      "confidence": 0.8338596224784851
+    },
+    {
+      "track_id": 25,
+      "bbox": [
+        248.40032958984375,
+        823.2614135742188,
+        429.4796447753906,
+        1057.8729248046875
+      ],
+      "confidence": 0.7674446702003479
+    },
+    {
+      "track_id": 35,
+      "bbox": [
+        89.3961181640625,
+        682.061279296875,
+        225.9335174560547,
+        902.8095703125
+      ],
+      "confidence": 0.6829472184181213
+    },
+    {
+      "track_id": 45,
+      "bbox": [
+        281.95404052734375,
+        626.109375,
+        543.2684326171875,
+        753.2662963867188
+      ],
+      "confidence": 0.5806911587715149
+    },
+    {
+      "track_id": 46,
+      "bbox": [
+        506.22454833984375,
+        418.2248229980469,
+        642.6661376953125,
+        736.69970703125
+      ],
+      "confidence": 0.2763892114162445
+    },
+    {
+      "track_id": 47,
+      "bbox": [
+        517.005126953125,
+        620.3507690429688,
+        756.83447265625,
+        897.5007934570312
+      ],
+      "confidence": 0.2559914290904999
+    }
+  ],
+  "weight_estimates": {
+    "unit": "index",
+    "per_bird_avg": {
+      "15": 0.027871857738185273,
+      "21": 0.02836032091902939,
+      "25": 0.02521882432407454,
+      "35": 0.013917522323672738,
+      "45": 0.016024273539827577,
+      "46": 0.020955449145104568,
+      "47": 0.03205474007370261
+    },
+    "flock_avg": 0.023486141151942388,
+    "assumptions": "Bounding box area used as weight proxy; camera calibration required to convert to grams."
+  },
+  "artifacts": {
+    "annotated_video": "outputs/annotated_video.mp4"
+  }
+}

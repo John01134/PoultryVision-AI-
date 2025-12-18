@@ -1,0 +1,168 @@
+{
+  "video_name": "input_af5d0761819a4adc856c943ed4f07bfb.mp4",
+  "fps_sampled": 5,
+  "counts_over_time": [
+    {
+      "timestamp_sec": 0,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 0,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 0,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 0,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 0,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 1,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 1,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 1,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 1,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 1,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 2,
+      "count": 6
+    },
+    {
+      "timestamp_sec": 2,
+      "count": 6
+    },
+    {
+      "timestamp_sec": 2,
+      "count": 7
+    },
+    {
+      "timestamp_sec": 2,
+      "count": 6
+    },
+    {
+      "timestamp_sec": 2,
+      "count": 7
+    },
+    {
+      "timestamp_sec": 3,
+      "count": 8
+    },
+    {
+      "timestamp_sec": 3,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 3,
+      "count": 6
+    },
+    {
+      "timestamp_sec": 3,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 3,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 4,
+      "count": 5
+    },
+    {
+      "timestamp_sec": 4,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 4,
+      "count": 2
+    },
+    {
+      "timestamp_sec": 4,
+      "count": 0
+    },
+    {
+      "timestamp_sec": 4,
+      "count": 0
+    },
+    {
+      "timestamp_sec": 5,
+      "count": 0
+    },
+    {
+      "timestamp_sec": 5,
+      "count": 1
+    },
+    {
+      "timestamp_sec": 5,
+      "count": 2
+    },
+    {
+      "timestamp_sec": 5,
+      "count": 2
+    },
+    {
+      "timestamp_sec": 5,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 6,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 6,
+      "count": 4
+    },
+    {
+      "timestamp_sec": 6,
+      "count": 3
+    },
+    {
+      "timestamp_sec": 6,
+      "count": 2
+    },
+    {
+      "timestamp_sec": 6,
+      "count": 2
+    },
+    {
+      "timestamp_sec": 7,
+      "count": 2
+    },
+    {
+      "timestamp_sec": 7,
+      "count": 0
+    },
+    {
+      "timestamp_sec": 7,
+      "count": 0
+    }
+  ],
+  "tracks_sample": [],
+  "weight_estimates": {
+    "unit": "index",
+    "per_bird_avg": {},
+    "flock_avg": 0,
+    "assumptions": "Bounding box area used as weight proxy; camera calibration required to convert to grams."
+  },
+  "artifacts": {
+    "annotated_video": "outputs/annotated_video.mp4"
+  }
+}
