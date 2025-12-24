@@ -4,11 +4,11 @@ Bird Counting, Tracking & Weight Estimation from Poultry CCTV Video
 
 # 1. Project Overview
 
-PoultryVision-AI is a computer-vision–based prototype designed to analyze fixed-camera poultry CCTV videos and automatically extract actionable flock analytics.
+PoultryVision-AI is a computer-vision–based prototype designed to analyze fixed-camera poultry CCTV videos and automatically extract flock-level analytics using YOLOv8 as the sole detection model.
 
 The system performs:
 
-- Bird detection
+- Bird detection using YOLOv8
 - Stable multi-object tracking with persistent IDs
 - Accurate bird counting over time
 - Relative (proxy-based) weight estimation
